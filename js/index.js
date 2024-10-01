@@ -17,3 +17,25 @@ function addGoods(e){
 
     listUnhealthy.appendChild(newLi);
 }
+
+let listUnhealthy = document.getElementById("listUnhealthy");
+
+let newelement = CreateNewElement("hot","Five","Banan")
+listUnhealthy.append(newelement)
+
+//
+function CreateNewElement(classvalue, idvalue, content){
+
+    let newLielement = document.createElement("li")
+    newLielement.setAttribute("class",classvalue)
+    newLielement.setAttribute("id",idvalue)
+
+    let newTextelement = document.createTextNode(content)
+
+    newLielement.append(newTextelement)
+
+    return newLielement
+
+}
+
+
